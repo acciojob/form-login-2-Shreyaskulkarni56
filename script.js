@@ -1,16 +1,15 @@
-//your JS code here. If required.
-document.getElementById("myForm").addEventListener("submit" ,function(event){
-	event.preventDefault();
+document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-    let firstname = document.getElementById("firstname").values;
-	let secondname = document.getElementById("secondname").values;
-	let phonenumber = document.getElementById("phonenumber").values;
-	let emailid = document.getElementById("emailid").values;
+    let firstName = document.getElementById("firstname").value;
+    let lastName = document.getElementById("secondname").value;
+    let phoneNumber = document.getElementById("phonenumber").value;
+    let email = document.getElementById("emailid").value;
 
-	alert(
+    alert(
         "First Name: " + firstName + " " +
         "Last Name: " + lastName + " " +
         "Phone Number: " + phoneNumber + " " +
         "Email ID: " + email
     );
-})
+});
